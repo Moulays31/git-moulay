@@ -1,0 +1,10 @@
+ .option label
+{
+    top: 40px; left: 40px;
+   	float: left;
+}
+.login label
+{
+    width: 10%;
+    float: left;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+img {
+    max-width: 20%;
+    float: left;
+    height:auto;
+  }
+
+.p{
+    font-family: 'montserrat' , sans-serif;
+}
+
+.intro{
+    
+    font-weight: 100;
+    text-decoration: underline black;
+}
+
+.intro_txt{
+    font-weight: 100;
+    float: left;
+}
+
+h2{
+    text-decoration: underline black;
+    font-family: 'montserrat' , sans-serif;
+    
+}
+
+
+.rouge{
+    color: rgb(255, 7, 7);
+}
+
+.italic{
+    font-size: 150%;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:underline;
+}
+
+code , .texte {
+    background-color: rgb(175, 202, 228);
+    max-width: 500px;
+}
+
+.gto{
+    text-decoration: underline;
+}
+
+.box{
+    color: rgb(255, 255, 255);
+    width: 50%;
+    border: 3px solid black;
+    height: 50%;
+    text-align: center;
+    margin: 60px;
+    background-color: blue;
+}
+
+.lineaire{
+    float: left;
+    background-image: linear-gradient(to right top,blue,green 50%,yellow);
+    width: 225px;
+    height: 100px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.radial{
+    float:right;
+    background-image: radial-gradient(farthest-side at top,yellow,green,blue);
+    width: 225px;
+    height: 100px;
+    position:relative;
+}

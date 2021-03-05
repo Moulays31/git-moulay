@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Texte dans l'onglet</title>
+    <!-- icone dans l'onglet -->
+    <link rel="icon" type="image/png" href="Assets/img/favicon.ico" />
+    <!-- lien avec le CSS -->
+    <link rel="stylesheet" href="CSS/style01.css" />
+</head>
+
+<body>
+    <h1>TITRE PRINCIPALE</h1>
+    <!-- balise "div" pour structurer le code -->
+    <!-- TRAITEMENT TEXTE -->
+    <div class="container">
+        <h2>QUELQUES TRAITEMENT DE TEXTE</h2>
+        <!-- balise "p" pour les paragraphe -->
+        <p>
+            <em>Italic</em>
+            <strong> Bold</strong>
+            <u> Souligner </u>
+            <s> Barrer </s>
+            <mark>Surlignage pas beau</mark>
+        </p>
+    </div>
+
+    <!-- AJOUT D'IMAGE, DE VIDÉO, AUDIO -->
+    <div class="container">
+        <h2>INTEGRATION IMAGE, VIDÉO & SONS</h2>
+        <!-- Image -->
+        <h3>Image</h3>
+        <figure>
+            <!-- Image taille réelle qui s'affichera ssi l'utilisateur click sur la miniature -->
+            <a href="Assets/img/myImage.jpg">
+                <!-- miniature de mon image -->
+                <img src="Assets/img/myImageMini.jpg" class=" imgModif " title="message qui apparait si on laisse la souris sur l'image que quelque seconde" alt="je suis une image">
+            </a>
+            <figcaption class="textColorWhite"> Légende de mon image</figcaption>
+        </figure>
+        
+        <!-- Vidéo -->
+        <h3>Vidéo</h3>
+        <!-- "poster" c'est la miniature de la video-->
+        <video controls src="Assets/videos/CharlieTheUnicorn.mp4" autoplay="false" loop="false"
+            poster="Assets/img/charlieTheUnicorn.png">
+            <!-- Depuis youtube, il faut copier le lien d'integration-->
+            <!-- <iframe width="494" height="278" src="https://www.youtube.com/embed/CsGYh8AacgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <!-- "source"  prévoir plusieurs videos, si la video ne se lance pas, alors une autre prend le relai-->
+            <source src="Assets/videos/CharlieTheUnicorn2.mp4">
+        </video>
+
+        <!-- audio -->
+        <h3>Audio</h3>
+        <audio controls src="Assets/sounds/charlie-the-unicorn.mp3" autoplay="false" loop="false"> </audio>
+
+    </div>
+    <!-- ANCRE -->
+    <div class="container">
+        <h2>INTEGRATION D'UNE ANCRE</h2>
+        <a href="#ancre_de_redirection" title="infobulle au passage de la souris"><br /> En cliquand ici l'utilisateur
+            sera redirigé vers "REDIRECTION" </a>
+    </div>
+
+    <!-- LISTE -->
+    <div class="container">
+        <h2>CRÉATION D'UNE LISTE</h2>
+        <ul>
+            <li>element A</li>
+            <ol>
+                <li>sous-element x</li>
+                <li>sous-element y</li>
+                <li>sous-element z</li>
+            </ol>
+            <li>element B</li>
+            <li>element C</li>
+            <li>element D</li>
+        </ul>
+
+    </div>
+
+    <!-- ANCRE REDIRECTION -->
+    <div class="container">
+        <h2 id="ancre_de_redirection">REDIRECTION </h2>
+        <p>Lorem, ipsum dolor sit amet <span class="textColorX"> texte de couleur differente</span> adipisicing elit.
+            Veniam fuga iure suscipit minus sapiente, qui voluptatem est unde? Culpa laudantium, unde neque
+            necessitatibus iure dicta suscipit laboriosam illo sit enim.</p>
+    </div>
+
+    <!-- HYPERLIEN -->
+    <div class="container">
+        <h2>INTÉGRATION HYPERLIEN</h2>
+        <!-- target="blank" : forcer l'ouverture d'une page dans un nouvel onglet -->
+        <a href="https://emsluo.com/index.php/fr/" target="blank">Un site genial d'une super GD</a>
+    </div>
+
+    <!-- TABLEAU -->
+    <div class="container">
+        <h2>CRÉATION D'UN TABLEAU</h2>
+        <table>
+            <!-- "table header" Entete du tableau -->
+            <thead>
+                <tr>
+                    <th>Titre colonne 1</th>
+                    <th>Titre colonne 2</th>
+                    <th>Titre colonne 3</th>
+                </tr>
+            </thead>
+            <!-- "table body" Corp du tableau -->
+            <tbody>
+                <tr>
+                    <td>Cellule 1/0</td>
+                    <td>Cellule 2/0</td>
+                    <td>Cellule 3/0</td>
+                </tr>
+                <tr>
+                    <td>Cellule 1/1</td>
+                    <td colspan="2"> Fusion cellule 2/1 & 3/1</td>
+                </tr>
+                <tr>
+                    <td>Cellule 1/2</td>
+                    <td>Cellule 2/2</td>
+                    <td rowspan="4">Fusion cellule 3/2 & 3/3</td>
+                </tr>
+                <tr>
+                    <td>Cellule 1/3</td>
+                    <td>Cellule 2/3</td>
+                </tr>
+
+            </tbody>
+            <!-- "table footer" Pied du tableau -->
+            <tfoot>
+                <tr>
+                    <td>Cellule A colonne 1</td>
+                    <td>Cellule B colonne 2</td>
+                    <td>Cellule C colonne 3</td>
+                </tr>
+            </tfoot>
+            <caption>Légende tableau</caption>
+        </table>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div class="container">
+        <h2>CRÉATION D'UN FORMULAIRE</h2>
+        <form method="post" action="register.php">
+            <p>
+                <label for="pseudo">Pseudo </label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Indication dans le champ à remplir">
+                <br>
+                <label for="mdp">Mot de passe </label>
+                <input type="password" name="mdp" id="mdp" placeholder="Indication dans le champ à remplir">
+                <br><br>
+                <!-- fenetre texte à remplir -->
+                <label for="text a remplir">Ecrivez du texte ici </label>
+                <textarea name="descirption" id="descirption" rows="5" cols="40"  placeholder="Indication dans le champ à remplir"></textarea><br>
+                <!-- Range avec valeur -->
+                <label for="valeur a remplir">Range avec valeur</label>
+                <input type="number" name="maValeur" id="maValeur" min="0" max="100" step="10"  placeholder="0"><br>
+                <!-- Range avec slider -->
+                <label for="valeur a remplir">Range avec slider</label>
+                <input type="range" name="myRange" id="myRange" list="tickmarks"><br>
+                <!-- Indication des cran sur le slider -->
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="50"></option>
+                    <option value="100"></option>
+                </datalist>
+    
+                <!-- Color pic -->
+                <label for="colorPic">Pic une couleur</label>
+                <input type="color" name="picColor" id="picColor">
+                <br>
+                <!-- Date -->
+                <label for="Selection d'une date">Ma date</label>
+                <input type="date" name="myDate" id="myDate">
+                <!-- POUR LES MOBILES UNIQUEMENT:-->
+                <!--
+                <input type="email" name="mail" id="mail" placeholder="Ecrivez votre email ici" required>
+                <input type="tel" name="phone" in="phone">
+                -->
+            </p>
+            
+        </form>
+
+        <form method="post" action="traitement.php">
+            <!-- "fieldset" permet de "sectoriser" un formulaire -->
+            <fieldset>
+                <h3>Les checkboxes<br></h3>
+                <label for="maCheckbox01"> Checkboxes 01</label>
+                <br><br>
+                <input type="checkbox" name="option1" id="option1">
+                <label for="option1">Option 1</label> <br>
+                <!-- "checked" coche une case -->
+                <input type="checkbox" name="option2" id="option2" checked>
+                <label for="option2">Option 2</label>
+                <br><br>
+                <label for="maCheckbox02"> Checkboxes 02</label>
+                <br><br>
+                <input type="radio" name="typeDeCategorie" value="optionA" id="optionA">
+                <label for="optionA">Option a</label><br>
+                <input type="radio" name="typeDeCategorie" value="optionB" id="optionB">
+                <label for="optionB">Option b</label><br>
+            </fieldset>
+
+            <fieldset>
+                <h3>Les listes déroulantes<br></h3>
+                <p>
+                    <label for="nomCategorie"> Nom de ma liste déroulante 01<br></label>
+                    <select name="nomCategorie" id="categorieListeDeroulante">
+                        <option value="valeurA"> Ma valeur A</option>
+                        <option value="valeurB"> M valeur B</option>
+                    </select>
+                </p>
+
+                <label for="maListe">Nom de ma liste déroulante 02 <br></label>
+                <select name="maListe" id="maListe">
+                    <optgroup label="categorieA">
+                        <option value="maSousCategorie01">sous-catégorie 01</option>
+                        <option value="maSousCategorie02">sous-catégorie 02</option>
+                        <option value="maSousCategorie03">sous-catégorie 03</option>
+                    </optgroup>
+                    <optgroup label="categorieB">
+                        <option value="maSousCategorie01">sous-catégorie 01</option>
+                        <option value="maSousCategorie02">sous-catégorie 02</option>
+                        <option value="maSousCategorie03">sous-catégorie 03</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <p>
+                    <h3>Les boutons<br></h3>
+                    <label for="mesBoutons">Les différents boutons</label>
+                    <br><br>
+                    <input type="submit" name="nomDuBouton01" id="monBouton01" value="bouton Submit">
+                    <br>
+                    <input type="reset" name="nomDuBouton02" id="monBouton02" value="bouton Reset">
+                    <br>
+                    <input type="button" name="nomDuBouton03" id="monBouton03" value="bouton Basique">
+                    <br>
+                    <input type="image" name="nomDuBouton02" id="" src="Assets/img/button.jpg">
+                </p>
+                
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

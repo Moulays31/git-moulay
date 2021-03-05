@@ -1,0 +1,13 @@
+ h1 { color:red; /*les titres seront en rouge */
+    font-style:italic ;/*les titres seront en italique */
+ }
+#photo
+   {
+      transform-origin: 0 0;
+      /* transformation haut coin gauche */
+      transform :rotate(15deg);
+   } 
+
+
+
+ 

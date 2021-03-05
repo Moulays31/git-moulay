@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.page-html
+{
+    font-family: montserrat, sans-serif;
+}
+
+#logo
+{
+  float: left;
+  max-width:10%;
+  height:auto;
+}
+
+#titre
+  {
+    font-weight: bold;
+  }  
+  
+  #code
+  {
+    float:initial;
+    max-width:40%;
+    height:auto;
+ 
+

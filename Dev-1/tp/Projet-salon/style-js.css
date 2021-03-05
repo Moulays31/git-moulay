@@ -1,0 +1,49 @@
+
+.lib_js p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo_js {
+    max-width: 20%;
+    height: auto;
+}
+
+#titre
+  {
+    font-weight: bold;
+  }  
+
+
+
+h1 {
+    line-height: 200px;  
+}
+
+.body_js {
+    max-width: 560px;
+    max-height: 560px;
+    height: auto;
+
+}
+
+p, h1, h2 {
+    margin: 40px 0px;
+}
+
+#exemple.js {
+    position: relative;
+}
+
+.lib_js img, .lib_js iframe {
+    margin: center;
+}
+
+.socials-icons {
+    display: flex;
+    justify-content: flex-end;
+}

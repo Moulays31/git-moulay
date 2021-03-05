@@ -1,0 +1,73 @@
+.page-connexion-inscription {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    margin-top: 3rem;
+    align-self: center;
+    text-align: center;
+}
+
+.formulaire-connexion-inscription {
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    width: 50%;
+    margin: 1em auto;
+    padding: 0.5em;
+    display: inline-flex;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+}
+
+#mail-in-checkbox {
+    display: flex;
+    margin: 25px;
+}
+
+#mail-in {
+    width: 1em;
+    height: 1em;
+    margin: 0.5%;
+}
+
+
+/* Mise en forme et comportement boutons */
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bouton-connexion-inscription {
+    display: inline-flex;
+    height: 40px;
+    width: 50%;
+    background-color: #C10230;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: 0rem;
+    font-size: initial;
+}
+
+.bouton-connexion-inscription:hover {
+    background-color: #8f0123;
+    border-radius: 5px;
+}
+
+#bouton-creation-connexion {
+    display: flex;
+    margin-left: 125px;
+}
+
+
+/* ---------------- */

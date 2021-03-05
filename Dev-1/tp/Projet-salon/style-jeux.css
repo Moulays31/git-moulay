@@ -1,0 +1,77 @@
+.page-jeu {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bouton-jeu {
+    display: flex;
+    height: 60px;
+    width: 160px;
+    background-color: #C10230;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.hide {
+    height: 60px;
+    width: 160px;
+    visibility: hidden;
+    text-align: center;
+}
+
+.bouton-jeu:hover {
+    height: 40px;
+    width: 360px;
+    background-color: #8f0123;
+    border-radius: 5px 5px 0 0;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+
+.bouton-jeu:hover+.hide {
+    visibility: visible;
+    background-color: #8f0123;
+    color: #FFFFFF;
+    height: 40px;
+    width: 360px;
+    border-radius: 0 0 5px 5px;
+    transition: width 1s 0.5s, visibility 0.1s 0.5s, opacity 1s 0.5s;
+    overflow: hidden;
+}
+
+.bouton-retour {
+    display: flex;
+    height: 40px;
+    width: 100px;
+    background-color: #C10230;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    border-radius: 5px;
+    padding: 20px, 20px, 20px, 20px;
+}
+
+.bouton-retour:hover {
+    background-color: #8f0123;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bloc-jeu {
+    display: flex;
+    height: 760px;
+    width: 820px;
+    background-color: #f3f6f9;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

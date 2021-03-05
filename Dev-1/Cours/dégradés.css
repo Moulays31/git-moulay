@@ -1,0 +1,9 @@
+div
+{
+    background-image:repeating-linear-gradient(blue 10px,yellow 50px,red 5px, black 60px);
+    width: 400px;
+    height: 300px;
+    position:relative;
+    top:80px ;
+    left:230px ;
+}

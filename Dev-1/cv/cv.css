@@ -1,0 +1,23 @@
+h1{
+    color:blue; 
+    font-style :normal ; 
+    border-style : double;
+    
+}
+img{
+    float:right;
+    margin-left: 20px;
+    
+}
+
+.Coordonées { color: black; 
+    font-style : normal; 
+    text-align : left;
+    
+}
+
+
+h2{color:midnightblue; 
+font-style :normal ; 
+border-style : double;
+text-align : center;}

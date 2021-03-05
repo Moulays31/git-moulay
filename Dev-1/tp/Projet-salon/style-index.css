@@ -1,0 +1,179 @@
+/* Import police Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Propriété générales (html + body) */
+html {
+    height: 100%;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    display: flex;
+	flex-direction: column;
+    min-height: 100%;
+    max-width: 70%;
+
+}
+
+/* CSS du header + nav (Hélène) */
+header {
+    display: flex;
+}
+.logo-region {
+    max-width: 180px;
+    max-height: 79px;
+    border-radius: 0 0 5px 5px;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav ul, nav ul li, #icons li, footer ul li {
+    display: inline;
+    padding: .75em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #202228;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75em;
+}
+
+nav ul li a:hover {
+    color: #8f0123 ;
+}
+
+.hover a:hover {
+    background-color: #202228;
+    padding: 0.75em;
+}
+
+nav ul li ul{
+    display: none;
+    background-color: #202228;
+    padding: 0.75em;
+}
+
+nav ul li ul li a {
+    color: white;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+#icons li a {
+    color: #202228;
+}
+
+#icons svg {
+    margin-right:-6px;
+    margin-bottom: -4px;
+}
+
+#contact svg {
+    background-color: #ffcd00 ;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+
+
+/* CSS page de contact */
+#page-contact input {
+    margin: 1em 0.2em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+#identity input {
+    display: inline-flexbox;
+    width: 30%;
+    margin: auto;
+}
+
+#message textarea {
+    width: 100%;
+    min-height: 200px;
+    margin: 0.5em auto;
+    overflow: scroll;
+    /* Pour que ma textarea ne dépasse pas du cadre du formulaire */
+    box-sizing: border-box;
+    /* utiliser la police par défaut définie sur ma page (Raleway) */
+    font-family : inherit;
+    font-size: 100%;
+}
+
+button {
+    padding: 0.5em;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #c10230;
+    border-color: #8f0123;
+ }
+
+ button:hover {
+    background-color: #8f0123;
+ }
+
+/* CSS du footer (Hélène) */
+footer {
+    background-color: #202228;
+    padding: 1.5em;
+    display: inline-flex ;
+    position: relative;
+    top: calc(100% - 128px);
+    width: 100%;
+    margin: auto;
+}
+
+footer img {
+    border-radius: 5px;
+}
+
+footer ul li {
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #ffcd00;
+    font-size: small;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.socios a:hover {
+    text-decoration: none;
+    color: #ffcd00;
+    background: #8f0123;
+}
+
+.fa {
+    font-size: large;
+    padding: 0.5em;
+    border-radius: 100%;
+    margin-left: 0.5em;
+    background:  #c10230;
+}
+
+.fa-twitter {
+    /* background: #55ACEE; */
+    color: white;
+  }
+
+  .fa-linkedin {
+    /* background: #007bb5; */
+    color: white;
+  }
+  
+  .fa-vimeo {
+    /* background: #45bbff; */
+    color: white;
+  }
